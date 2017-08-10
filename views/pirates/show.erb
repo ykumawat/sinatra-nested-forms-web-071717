@@ -1,7 +1,13 @@
 <h1>Display your Pirate here</h1>
+<%= params["pirate"] %>
 
 
 <h2>Display your first ship here</h2>
-
+<p>Ship 1 Name: <%= params["pirate"]["ships"][0]["name"] %></p>
+<p>Ship 1 Type: <%= params["pirate"]["ships"][0]["type"] %></p>
+<p>Ship 1 Booty: <%= params["pirate"]["ships"][0]["booty"] %></p>
 
 <h2>Display your second ship here</h2>
+<p>Ship 2 Name: <%= params["pirate"]["ships"][1]["name"] %></p>
+<p>Ship 2 Type: <%= params["pirate"]["ships"][1]["type"] %></p>
+<p>Ship 2 Booty: <%= params["pirate"]["ships"][1]["booty"] %></p>
